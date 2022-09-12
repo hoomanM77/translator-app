@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Translator</title>
+    <meta name="viewport" content="width=device-width ,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="welcome to my first website">
+    <meta name="keyword" content="HTML,CSS,PHP,developer">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+
+<div class="container">
+    <div class="row justify-content-center align-items-center mt-5">
+        <div class="col-12 col-md-8">
+            <h1 class="text-center text-warning fw-bold">Welcome to my Translator Application</h1>
+            <div class="row">
+                <div class="col-12">
+                    <div class="translate-box bg-white rounded-3 p-3">
+                        <div class="row">
+                            <div class="col-12 ">
+                                <div class="input-group">
+                                    <textarea type="text"  class="form-control fw-bold fs-5" id="source_text" placeholder="Enter Text..."></textarea>
+                                    <span type="text" class="form-control fw-bold text-muted fs-5" id="target_text" >Translation</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="navbar_tools border rounded-bottom  row g-0">
+                            <div class="col-12 col-xl-6 p-1"><div class=" py-2 ps-3 gap-4 d-flex flex-row justify-content-between">
+                                <i class="bi bi-volume-up-fill fs-5" id="speak_source_text"></i>
+                                <i class="bi bi-clipboard-fill fs-5 " id="copy_source_text" data-bs-toggle="tooltip" data-bs-placement="top" title="Copied!"></i>
+                                <div class="line"></div>
+                                <select class="form-select form-select-sm w-50 fw-bold" id="source_language">
+                                    <option value="default" selected>Source language</option>
+                                </select>
+                                <i class="bi bi-arrow-left-right fs-5" id="change_order"></i>
+                            </div></div>
+                            <div class="col-12 p-1 col-xl-6 ps-5"><div class=" py-2 pe-3  gap-4 d-flex flex-row-reverse justify-content-between">
+                                <i class="bi bi-volume-up-fill fs-5" id="speak_target_text"></i>
+                                <i class="bi bi-clipboard-fill fs-5 " id="copy_target_text" data-bs-toggle="tooltip" data-bs-placement="top" title="Copied!"></i>
+                                <div class="line"></div>
+                                <select class="form-select form-select-sm fw-bold" id="target_language">
+                                    <option value="default" selected>Target language</option>
+                                </select>
+                            </div></div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <button class="btn btn-dark w-100 mt-3 fw-bold translator-btn">Translate Text</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<script src="javascript/bootstrap.bundle.min.js"></script>
+<script src="javascript/App.js"></script>
+</body>
+</html>
